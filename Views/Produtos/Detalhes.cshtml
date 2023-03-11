@@ -1,0 +1,23 @@
+@model Produto
+
+@{
+    ViewData["Title"] = "Detalhes do Produto";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Excluir" asp-route-id="@Model.ProdutoId" method="post">
+                <h2>@Model.Nome</h2>
+                <input type="hidden" name="id" asp-for="ProdutoId"/>
+                <p>@Model.Descricao</p>
+                <p>Preço: @Model.Preco.ToString("C")</p>
+                <p>Data de Cadastro: @Model.DataCadastro.ToString("dd/MM/yyyy")</p>
+                <p>Categoria: @Model.Categoria</p>
+                <button type="submit">Deletar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gi/KDR5M1sN0M1rw4rwEp79yKWl/R9ouoesejWQu2EGV/6UdzXQi2qt/fE+SdHwzM5wQ2/EK6jbBdSFnxZkaVA==",
+  "dgSpecHash": "Jtgarq9rCc7YcSvN2XJx0z5sl5MpYeWyrRy6hR9cUCbovYjpQiY5dC3ywYzxTcF3S4j5ixBN3QhOlVrdPfNctA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\EstoqueMVC3.csproj",
+  "projectFilePath": "C:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\EstoqueMVC3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vitor\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Vitor\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

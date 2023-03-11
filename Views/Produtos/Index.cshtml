@@ -1,0 +1,34 @@
+@model List<Produto>
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Data de Cadastro</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var produto in Model)
+            {
+                <tr>
+                    <td>@produto.Nome</td>
+                    <td>@produto.Descricao</td>
+                    <td>@produto.Preco.ToString("C")</td>
+                    <td>@produto.DataCadastro.ToString("dd/MM/yyyy")</td>
+                    <td>@produto.Categoria</td>
+                    <td>
+                        <a asp-action="Editar" asp-route-id="@produto.ProdutoId">Editar</a> |
+                        <a asp-action="Detalhes" asp-route-id="@produto.ProdutoId">Detalhes</a> |
+                        <a asp-action="Detalhes" asp-route-id="@produto.ProdutoId">Excluir</a>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-action="Cadastrar" class="btn btn-primary">Cadastrar</a>
+</div>
