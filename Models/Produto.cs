@@ -13,6 +13,7 @@ namespace EstoqueMVC3.Models
         public decimal Preco { get; set; }
         public DateTime DataCadastro { get; set; }
         public string Categoria { get; set; }
+        public IEnumerable<ItemEstoque> ItensEstoque { get; set; } = new List<ItemEstoque>();
         
 
     }

@@ -1,0 +1,32 @@
+@model ItemEstoque
+
+<h1>Excluir Item de Estoque</h1>
+
+<p>Tem certeza que deseja excluir o item de estoque abaixo?</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <dl class="dl-horizontal">
+            <dt>Nome:</dt>
+            <dd>@Model.Nome</dd>
+            <dt>Descrição:</dt>
+            <dd>@Model.Descricao</dd>
+            <dt>Quantidade:</dt>
+            <dd>@Model.Quantidade</dd>
+            <dt>Produto:</dt>
+            <dd>@Model.Produto.Nome</dd>
+            <dt>Validade:</dt>
+            <dd>@Model.Validade.ToShortDateString()</dd>
+            <dt>Data de Entrada:</dt>
+            <dd>@Model.DataEntrada.ToShortDateString()</dd>
+        </dl>
+    </div>
+</div>
+
+<form asp-controller="Estoque" asp-action="ExcluirT" asp-route-id="@Model.ItemEstoqueId" method="post">
+    <div class="form-group">
+        <input type="hidden" name="id" value="@Model.ItemEstoqueId" />
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-controller="ItemEstoque" asp-action="Index" class="btn btn-default">Cancelar</a>
+    </div>
+</form>

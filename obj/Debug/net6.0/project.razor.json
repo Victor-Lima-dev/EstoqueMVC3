@@ -18374,6 +18374,11 @@
   "RootNamespace": "EstoqueMVC3",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Estoque\\Editar.cshtml",
+      "TargetPath": "Views\\Estoque\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -18394,8 +18399,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Estoque\\Detalhes.cshtml",
+      "TargetPath": "Views\\Estoque\\Detalhes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Estoque\\Excluir.cshtml",
+      "TargetPath": "Views\\Estoque\\Excluir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Produtos\\Cadastrar.cshtml",
       "TargetPath": "Views\\Produtos\\Cadastrar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Estoque\\Index.cshtml",
+      "TargetPath": "Views\\Estoque\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18406,6 +18426,11 @@
     {
       "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Vitor\\Desktop\\code\\EstoqueMVC3\\Views\\Estoque\\Adicionar.cshtml",
+      "TargetPath": "Views\\Estoque\\Adicionar.cshtml",
       "FileKind": "mvc"
     },
     {

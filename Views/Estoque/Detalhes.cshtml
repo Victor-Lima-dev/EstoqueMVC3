@@ -1,0 +1,43 @@
+@model ItemEstoque
+
+<h2>Detalhes do Item de Estoque</h2>
+
+<div>
+    <h4>Nome: @Model.Nome</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Descrição
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Descricao
+        </dd>
+        <dt class="col-sm-2">
+            Quantidade
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Quantidade
+        </dd>
+        <dt class="col-sm-2">
+            Produto
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Produto.Nome
+        </dd>
+        <dt class="col-sm-2">
+            Validade
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Validade.ToString("dd/MM/yyyy")
+        </dd>
+        <dt class="col-sm-2">
+            Data de Entrada
+        </dt>
+        <dd class="col-sm-10">
+            @Model.DataEntrada.ToString("dd/MM/yyyy")
+        </dd>
+    </dl>
+    <div>
+        <a asp-controller="Estoque" asp-action="Index">Voltar para a lista</a>
+    </div>
+</div>

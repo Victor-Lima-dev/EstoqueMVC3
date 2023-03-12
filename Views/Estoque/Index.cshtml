@@ -1,0 +1,37 @@
+@model List<ItemEstoque>
+
+<h1>Lista de Itens de Estoque</h1>
+<a asp-action="Adicionar">Criar Item de Estoque</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ItemEstoqueId</th>
+            <th>Nome</th>
+            <th>Descricao</th>
+            <th>Quantidade</th>
+            <th>Produto</th>
+            <th>Validade</th>
+            <th>DataEntrada</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var itemEstoque in Model)
+        {
+            <tr>
+                <td>@itemEstoque.ItemEstoqueId</td>
+                <td>@itemEstoque.Nome</td>
+                <td>@itemEstoque.Descricao</td>
+                <td>@itemEstoque.Quantidade</td>
+                <td>@itemEstoque.Validade.ToShortDateString()</td>
+                <td>@itemEstoque.DataEntrada.ToShortDateString()</td>
+                <td> <a asp-action="Detalhes" asp-route-id="@itemEstoque.ItemEstoqueId">Detalhes</a></td>
+                <td> <a asp-action="Editar" asp-route-id="@itemEstoque.ItemEstoqueId">Editar</a></td>
+                <td> <a asp-action="Excluir" asp-route-id="@itemEstoque.ItemEstoqueId">Excluir</a></td>
+            </tr>
+        }
+    </tbody>
+    <form asp-action="Create" method="post">
+        <button type="submit">CriarEstoque</button>
+    </form>
+</table>

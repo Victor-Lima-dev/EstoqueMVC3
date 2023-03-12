@@ -14,6 +14,8 @@ namespace EstoqueMVC3.context
         }
 
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Estoque> Estoques { get; set; }
+        public DbSet<ItemEstoque> ItensEstoque { get; set; }
         
         
     }
